@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
     color: #3C3C3C ;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    overflow-x: hidden;
+    overflow: hidden;
   
 
     
