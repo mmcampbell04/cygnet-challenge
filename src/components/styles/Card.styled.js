@@ -1,0 +1,65 @@
+import styled from "styled-components";
+import { Flex } from "./Layouts.styled";
+
+export const StyledCard = styled.article`
+  border: 1px solid #d0d0d0;
+  background: #ffffff;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
+
+  &:hover {
+    border: 2px solid #3a808e;
+  }
+`;
+
+export const CardHeader = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25em;
+`;
+
+export const Photo = styled.img`
+  width: 90%;
+  text-align: center;
+`;
+
+export const PartCode = styled.h3`
+  font-weight: 700;
+  font-size: 0.875rem;
+`;
+
+export const PartName = styled.p`
+  text-transform: uppercase;
+  font-size: 0.875rem;
+`;
+
+export const IconWrapper = styled(Flex)`
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-block: 1px solid #e8eade;
+  padding: 0.5em;
+  height: 47px;
+  gap: 0.25em;
+`;
+
+export const Price = styled.p`
+  font-weight: 700;
+  align-self: center;
+`;
+
+export const AddToCartWrapper = styled(Flex)`
+  justify-content: center;
+
+  input {
+    width: clamp(11%, 5vw, 20%);
+    aspect-ratio: 1/1;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-right: 0.2em;
+  }
+`;
