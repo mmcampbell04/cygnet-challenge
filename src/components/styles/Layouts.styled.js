@@ -9,11 +9,6 @@ export const Flex = styled.div`
   display: flex;
 `;
 
-export const Container = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
 export const Modal = css`
   position: absolute;
   z-index: 10;

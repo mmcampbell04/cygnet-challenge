@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const StyledForm = styled.form`
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
   align-items: center;
-  max-width: 60%;
   padding-inline: 2em;
   max-height: 3em;
+  width: 50%;
   border: 1px solid #ebebeb;
   border-radius: 25px;
   color: #55a5b5;

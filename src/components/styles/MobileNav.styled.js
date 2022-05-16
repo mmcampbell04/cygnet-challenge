@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container, Modal } from "./Layouts.styled";
+import { Flex, Modal } from "./Layouts.styled";
 
 export const StyledMobileNav = styled.nav`
   display: flex;
@@ -38,9 +38,18 @@ export const NavList = styled.ul`
   }
 `;
 
-export const SearchWrapper = styled(Container)`
+export const SearchWrapper = styled(Flex)`
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2em;
+  padding: 1em;
   ${Modal}
+
   transform: ${(props) =>
     props.searchModalOpen ? "translateX(0%)" : "translateX(-150%)"};
-  justify-content: center;
+
+  form {
+    align-self: center;
+    width: 90%;
+  }
 `;

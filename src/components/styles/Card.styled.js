@@ -20,14 +20,17 @@ export const CardHeader = styled.a`
   flex-direction: column;
   align-items: center;
   gap: 0.25em;
+
+  @media (min-width: 601px) {
+    align-items: flex-start;
+  }
 `;
 
 export const Photo = styled.img`
-  width: 90%;
-  text-align: center;
+  width: 100%;
 `;
 
-export const PartCode = styled.h3`
+export const PartCode = styled.h4`
   font-weight: 700;
   font-size: 0.875rem;
 `;
@@ -57,7 +60,8 @@ export const AddToCartWrapper = styled(Flex)`
 
   input {
     width: clamp(11%, 5vw, 20%);
-    aspect-ratio: 1/1;
+    aspect-ratio: 1.25/1;
+    border: 1px solid #b8c6c9;
     font-size: 0.75rem;
     text-align: center;
     margin-right: 0.2em;
