@@ -5,16 +5,17 @@ export const StyledMobileNav = styled.nav`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 1em 2em;
   border-bottom: 2px solid #f8c991;
   img {
     width: 10rem;
   }
 
   button {
+    display: grid;
+    place-content: center;
     color: #55a5b5;
-    margin-left: 0.5em;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 `;
 

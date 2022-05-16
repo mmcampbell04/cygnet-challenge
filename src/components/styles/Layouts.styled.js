@@ -7,6 +7,7 @@ export const Grid = css`
 
 export const Flex = styled.div`
   display: flex;
+  gap: 0.5em;
 `;
 
 export const Modal = css`

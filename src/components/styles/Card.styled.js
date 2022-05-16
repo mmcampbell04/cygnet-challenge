@@ -19,7 +19,6 @@ export const CardHeader = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25em;
 
   @media (min-width: 601px) {
     align-items: flex-start;
@@ -42,6 +41,7 @@ export const PartName = styled.p`
 
 export const IconWrapper = styled(Flex)`
   width: 100%;
+  margin-block: 0.5em;
   justify-content: center;
   align-items: center;
   border-block: 1px solid #e8eade;
@@ -57,9 +57,10 @@ export const Price = styled.p`
 
 export const AddToCartWrapper = styled(Flex)`
   justify-content: center;
+  gap: 1px;
 
   input {
-    width: clamp(11%, 5vw, 20%);
+    width: clamp(17%, 5vw, 25%);
     aspect-ratio: 1.25/1;
     border: 1px solid #b8c6c9;
     font-size: 0.75rem;

@@ -12,7 +12,7 @@ export const StyledSection = styled.section`
 
   h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5625;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     color: #3c3c3c;
     font-weight: 300;
   }

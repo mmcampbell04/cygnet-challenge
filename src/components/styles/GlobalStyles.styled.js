@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
   }
  
   html, body{
-    width: 100%;
+    width: 100vw;
     position: relative;
     overflow-x: hidden;
 }
