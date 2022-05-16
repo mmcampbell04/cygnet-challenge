@@ -22,9 +22,14 @@ const MobileNav = ({ menuOptions }) => {
         <img src={logo} alt="company logo" />
       </a>
       <Flex>
-        <button>
-          <HiSearch onClick={toggleSearchModal} />
-        </button>
+        {searchModalOpen ? (
+          ""
+        ) : (
+          <button>
+            <HiSearch onClick={toggleSearchModal} />
+          </button>
+        )}
+
         <button onClick={toggleNav}>{isNavOpen ? <HiX /> : <HiMenu />}</button>
       </Flex>
 
@@ -34,6 +39,9 @@ const MobileNav = ({ menuOptions }) => {
         })}
       </NavList>
       <SearchWrapper searchModalOpen={searchModalOpen}>
+        <button onClick={toggleSearchModal}>
+          <HiX />
+        </button>
         <Searchbar />
       </SearchWrapper>
     </StyledMobileNav>
