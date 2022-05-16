@@ -13,10 +13,10 @@ export const Modal = css`
   position: absolute;
   z-index: 10;
   background: #fbfbfb;
-  top: 110%;
+  top: 1.5%;
   left: 0;
   width: 100vw;
-  height: 25vh;
+  height: 13rem;
   transition: transform 0.5s ease-in-out;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
 `;

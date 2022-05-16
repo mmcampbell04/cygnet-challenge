@@ -2,14 +2,13 @@ import styled from "styled-components";
 import { Flex, Modal } from "./Layouts.styled";
 
 export const StyledMobileNav = styled.nav`
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  position: relative;
-  width: 100%;
   padding: 1em;
-  border-bottom: 1px solid #f8c991;
+  border-bottom: 2px solid #f8c991;
   img {
-    width: 40%;
+    width: 10rem;
   }
 
   button {
@@ -23,7 +22,7 @@ export const NavList = styled.ul`
   ${Modal}
 
   transform: ${(props) =>
-    props.isNavOpen ? "translateX(0%)" : "translateX(150%)"};
+    props.isNavOpen ? "translateX(0%)" : "translateX(100%)"};
 
   li {
     font-size: 0.875rem;
@@ -42,11 +41,11 @@ export const SearchWrapper = styled(Flex)`
   flex-direction: column;
   align-items: flex-end;
   gap: 2em;
-  padding: 1em;
+  padding: 0.5em 1em;
   ${Modal}
 
   transform: ${(props) =>
-    props.searchModalOpen ? "translateX(0%)" : "translateX(-150%)"};
+    props.searchModalOpen ? "translateX(0%)" : "translateX(-100%)"};
 
   form {
     align-self: center;

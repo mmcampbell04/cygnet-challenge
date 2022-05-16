@@ -41,9 +41,9 @@ function ContextProvider({ children }) {
   // lock body scroll when mobile nav menu is open
   useEffect(() => {
     if (isNavOpen || searchModalOpen) {
-      document.body.style.overflowY = "hidden";
+      document.body.style.position = "fixed";
     } else {
-      document.body.style.overflowY = "auto";
+      document.body.style.position = "relative";
     }
   }, [isNavOpen, searchModalOpen]);
 

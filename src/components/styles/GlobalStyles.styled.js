@@ -14,18 +14,26 @@ const GlobalStyles = createGlobalStyle`
   }
   
   body {
-    width: 100vw;
+
     background: #FFFFFF;
     font-family: "Roboto", sans-serif;
     font-size: 100%;
     color: #3C3C3C ;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    overflow: hidden;
-  
+
+    
 
     
   }
+ 
+  html, body{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
 
   /* Remove styles from a elements */
 
